@@ -1,3 +1,3 @@
-import ABI from '../backend/artifacts/contracts/ARpunks.sol/ARpunks.json'
-export const NFT_CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-export const abi = ABI.abi;
+import ABI from './ARpunks.sol/ARpunks.json'
+export const NFT_CONTRACT_ADDRESS = "0x4FA9369067b4e2911b19c3cE91eA8bA3d5B9a398";
+export const abi=ABI.abi;

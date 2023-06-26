@@ -5,7 +5,9 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const hre = require("hardhat");
-
+async function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 async function main() {
  
 
@@ -16,6 +18,13 @@ async function main() {
   console.log(
     `ARPunks deployed to ${arpunks.target}`
   );
+await sleep(20*1000)
+  await hre.run("verify:verify", {
+    address: arpunks.target,
+    constructorArguments: ['https://ipfs.io/ipfs/Qmbygo38DWF1V8GttM1zy89KzyZTPU2FLUzQtiDvB7q6i5/'],
+  });
+
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere

@@ -19,6 +19,10 @@ contract ARpunks is ERC721Enumerable, Ownable {
          _safeMint(msg.sender, totalSupply());
     }
 
+    function noOfTokens() public view returns(uint){
+        return totalSupply();
+    }
+
 
 
 
