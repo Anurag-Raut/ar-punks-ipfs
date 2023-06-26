@@ -8,6 +8,7 @@ import { publicProvider } from 'wagmi/providers/public';
 import {useState,useEffect} from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,
