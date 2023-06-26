@@ -59,7 +59,7 @@ const noOFTokensOfCurrentUser = useContractRead({
       abi: abi,
       functionName: 'balanceOf',
       args:[address],
-      // watch: true,
+      watch: true,
       
     })
  
