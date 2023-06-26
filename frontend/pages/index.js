@@ -110,7 +110,12 @@ console.log(indents)
   return (
     <div >
       <div style={{display:'flex' ,width:'95vw', justifyContent:'center'}}>
+      {  isConnected?
       <ConnectButton />
+      :
+      null
+      }
+      
         </div>
      
       <Head>
