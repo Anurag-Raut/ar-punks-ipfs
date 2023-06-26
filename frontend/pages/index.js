@@ -9,7 +9,7 @@ import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import {useContractRead,useAccount, useContractWrite} from 'wagmi'
 import Web3 from "web3";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import MetaData from './../components/metadata';
+import MetaData from './../components/Metadata';
 export default function Home() {
   const {address,isConnected}=useAccount();
   
